@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = 'prediccion_app/static/'
 
 # En desarrollo
-STATICFILES_DIRS = [BASE_DIR / "prediccion_app/static/"]
+STATICFILES_DIRS = [os.path.join(BASE_DIR,"prediccion_app/static/")]
 
 if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
